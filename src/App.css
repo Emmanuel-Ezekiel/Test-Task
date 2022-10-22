@@ -1,38 +1,396 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
+  height: 775px;
+  width: 748px;
+  border-radius: 10px;  
+  background: #FFFFFF;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+  margin: 137px auto;
+}
+
+.Header {
+font-weight: 600;
+font-size: 22px;
+line-height: 28px;
+color: #4A4A4A;
+margin: 40.8px 0 24.2px 39px; 
+}
+
+.Resolution_Tabs {
+  height: 32px;
+  width: 391px;
+  background: #FFFFFF;
+  margin: 0 0 44.4px 40px;
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.Tab {
+  height: 32px;
+  width: 92px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #4A4A4A;
+  cursor: pointer;
+  position: relative;
+}
+
+.Tab2 {
+  height: 32px;
+  width: 96px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #4A4A4A;
+  cursor: pointer;
+  position: relative;
+}
+
+.Tab3 {
+  height: 32px;
+  width: 104px;
+  border: 1px solid #D9D9D9;
+  background: #FFFFFF;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #4A4A4A;
+  cursor: pointer;
+  position: relative;
+}
+
+.display {
+  display: none;
+}
+
+.display.show {
+  display: block;
+  
+}
+
+.container {
+height: 99.5999984741211px;
+width: 608px;
+/* border: 1px solid red; */
+margin-left: 40px;
+}
+
+.percent {
+  height: 39.599998474121094px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  height: 39.599998474121094px;
+  width: 150px;
+  display: flex;
+}
+
+.dots {
+height: 10px;
+width: 10px;
+border-radius: 50%;
+background: #8BC34A;
+border: 2px solid #FFFFFF;
+}
+
+.error-result {
+  height: 38px;
+  display: flex;
+  flex-direction: column;
+  margin-top: -6px;
+  margin-left: 8px;
+}
+
+.error-result h2 {
+  font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #4A4A4A;
+}
+.error-result h2 span {
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #4A4A4A;
+}
+
+.error-result span {
+  font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+color: #A0B0B9;
+}
+
+.chart {
+  height: 45px;
+width: 608px;
+/* border: 1px solid; */
+margin-top: 15px;
+}
+
+.chart1 {
+  height: 8px;
+  border: 1px solid #8BC34A;
+  display: flex;
+}
+
+.first {
+  width: 60%;
+  /* border: 1px solid red; */
+  height: 8px;
+  background-color: #FFCC00;
+}
+
+.second {
+  width: 40%;
+  /* border: 1px solid red; */
+  height: 8px;
+  background: #A0B0B9;
+}
+
+.Box {
+  display: flex;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 30px;
+  margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.chartBox {
+  display: flex;
+  flex-direction: rows;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+font-size: 12px;
+line-height: 16px;
+color: #4A4A4A;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.steps {
+  height: 403.3500061035156px;
+  width: 609px;
+  margin-top: 44px;
+  
+}
+
+.firstSteps {
+  height: 102.3499984741211px;
+  width: 600px;
+  display: flex;
+}
+
+.image {
+  height: 48px;
+  width: 48px;
+  position: relative;
+}
+
+.image::before {
+position: absolute;
+content: "";
+background-image: url("../public/svg/Combined Shape.svg");
+top: 90%;
+left: 40%;
+height: 78px;
+width: 10px;
+}
+
+.image2 {
+  height: 48px;
+  width: 48px;
+  position: relative;
+}
+
+.image2::before {
+position: absolute;
+content: "";
+background-image: url("../public/svg/Combined Shape.svg");
+top: 60%;
+left: 40%;
+height: 78px;
+width: 10px;
+}
+
+.image3 {
+  height: 48px;
+  width: 48px;
+  position: relative;
+}
+
+.image3::before {
+position: absolute;
+content: "";
+/* background-image: url("../public/svg/Combined Shape.svg"); */
+top: 90%;
+left: 40%;
+height: 78px;
+width: 10px;
+}
+
+.stepCon {
+  height: 94.5999984741211px;
+  width: 150px;
+  margin-left: 20px;
+}
+.stepCon2 {
+  height: 94.5999984741211px;
+  width: 150px;
+  margin-left: 20px;
+}
+
+.stepCon h2{
+  font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #4A4A4A;
+}
+.stepCon2 h2{
+  font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+color: #FF6A67;
+}
+
+.stepCon h2 span {
+  height: 18px;
+  width: 37px;
+  border-radius: 10px;
+  background: #8BC34A;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+.stepCon2 h2 span {
+  height: 18px;
+  width: 37px;
+  border-radius: 10px;
+  background: #FF6A67;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #FFFFFF;
+  
+}
+
+.searchFigure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchFigure h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #4A4A4A;
+}
+
+.searchFigure span {
+  font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #4A4A4A;
+}
+
+.searchFigure2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchFigure2 h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color:  #A0B0B9;
+}
+
+.searchFigure2 span {
+  font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color:  #A0B0B9;
+}
+
+.trafficsCon {
+  height: 102px;
+  width: 298px;
+  margin-left: 85px;
+}
+
+.trafficPercent {
+  height: 56px;
+  width: 170px;
+}
+.trafficPercent2 {
+  height: 28px;
+  width: 84px;
+ 
+}
+
+.trafficPercent h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #4A4A4A;
+}
+.trafficPercent2 h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FF6A67;
+}
+
+.trafficsCon span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #A0B0B9;
+  height: 17px;
+width: 300px;
+
+}
+
+.trafficDes {
+font-weight: 400;
+font-size: 12px;
+line-height: 17px;
+color: #4A4A4A;
+margin-top: 6px;
+}
+
+.trafficDes span {
+  color: #2196F3;
+}
+
+.line {
+  height: 1px;
+  width: 531px;
+  background: #EFF1F4;
+  margin-top: 30.65px;
+  margin-left: 70px;
+
+}
+
+.Second {
+  margin-top: 20px;
+}
+
+.third {
+  margin-top: 20px;
 }
